@@ -1,0 +1,15 @@
+C:\Users\Daniel\Documents\GitHub\Prueba-MMKT\Backend\MMKTBackend.Infrastructure\bin\Debug\net5.0\MMKTBackend.Infrastructure.deps.json
+C:\Users\Daniel\Documents\GitHub\Prueba-MMKT\Backend\MMKTBackend.Infrastructure\bin\Debug\net5.0\MMKTBackend.Infrastructure.runtimeconfig.json
+C:\Users\Daniel\Documents\GitHub\Prueba-MMKT\Backend\MMKTBackend.Infrastructure\bin\Debug\net5.0\MMKTBackend.Infrastructure.runtimeconfig.dev.json
+C:\Users\Daniel\Documents\GitHub\Prueba-MMKT\Backend\MMKTBackend.Infrastructure\bin\Debug\net5.0\MMKTBackend.Infrastructure.dll
+C:\Users\Daniel\Documents\GitHub\Prueba-MMKT\Backend\MMKTBackend.Infrastructure\bin\Debug\net5.0\MMKTBackend.Infrastructure.pdb
+C:\Users\Daniel\Documents\GitHub\Prueba-MMKT\Backend\MMKTBackend.Infrastructure\obj\Debug\net5.0\MMKTBackend.Infrastructure.csproj.AssemblyReference.cache
+C:\Users\Daniel\Documents\GitHub\Prueba-MMKT\Backend\MMKTBackend.Infrastructure\obj\Debug\net5.0\MMKTBackend.Infrastructure.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Daniel\Documents\GitHub\Prueba-MMKT\Backend\MMKTBackend.Infrastructure\obj\Debug\net5.0\MMKTBackend.Infrastructure.AssemblyInfoInputs.cache
+C:\Users\Daniel\Documents\GitHub\Prueba-MMKT\Backend\MMKTBackend.Infrastructure\obj\Debug\net5.0\MMKTBackend.Infrastructure.AssemblyInfo.cs
+C:\Users\Daniel\Documents\GitHub\Prueba-MMKT\Backend\MMKTBackend.Infrastructure\obj\Debug\net5.0\MMKTBackend.Infrastructure.csproj.CoreCompileInputs.cache
+C:\Users\Daniel\Documents\GitHub\Prueba-MMKT\Backend\MMKTBackend.Infrastructure\obj\Debug\net5.0\MMKTBackend.Infrastructure.dll
+C:\Users\Daniel\Documents\GitHub\Prueba-MMKT\Backend\MMKTBackend.Infrastructure\obj\Debug\net5.0\refint\MMKTBackend.Infrastructure.dll
+C:\Users\Daniel\Documents\GitHub\Prueba-MMKT\Backend\MMKTBackend.Infrastructure\obj\Debug\net5.0\MMKTBackend.Infrastructure.pdb
+C:\Users\Daniel\Documents\GitHub\Prueba-MMKT\Backend\MMKTBackend.Infrastructure\obj\Debug\net5.0\MMKTBackend.Infrastructure.genruntimeconfig.cache
+C:\Users\Daniel\Documents\GitHub\Prueba-MMKT\Backend\MMKTBackend.Infrastructure\obj\Debug\net5.0\ref\MMKTBackend.Infrastructure.dll

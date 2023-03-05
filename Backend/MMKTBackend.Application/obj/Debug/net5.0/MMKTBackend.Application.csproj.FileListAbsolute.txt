@@ -1,0 +1,15 @@
+C:\Users\Daniel\Documents\GitHub\Prueba-MMKT\Backend\MMKTBackend.Application\bin\Debug\net5.0\MMKTBackend.Application.deps.json
+C:\Users\Daniel\Documents\GitHub\Prueba-MMKT\Backend\MMKTBackend.Application\bin\Debug\net5.0\MMKTBackend.Application.runtimeconfig.json
+C:\Users\Daniel\Documents\GitHub\Prueba-MMKT\Backend\MMKTBackend.Application\bin\Debug\net5.0\MMKTBackend.Application.runtimeconfig.dev.json
+C:\Users\Daniel\Documents\GitHub\Prueba-MMKT\Backend\MMKTBackend.Application\bin\Debug\net5.0\MMKTBackend.Application.dll
+C:\Users\Daniel\Documents\GitHub\Prueba-MMKT\Backend\MMKTBackend.Application\bin\Debug\net5.0\MMKTBackend.Application.pdb
+C:\Users\Daniel\Documents\GitHub\Prueba-MMKT\Backend\MMKTBackend.Application\obj\Debug\net5.0\MMKTBackend.Application.csproj.AssemblyReference.cache
+C:\Users\Daniel\Documents\GitHub\Prueba-MMKT\Backend\MMKTBackend.Application\obj\Debug\net5.0\MMKTBackend.Application.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Daniel\Documents\GitHub\Prueba-MMKT\Backend\MMKTBackend.Application\obj\Debug\net5.0\MMKTBackend.Application.AssemblyInfoInputs.cache
+C:\Users\Daniel\Documents\GitHub\Prueba-MMKT\Backend\MMKTBackend.Application\obj\Debug\net5.0\MMKTBackend.Application.AssemblyInfo.cs
+C:\Users\Daniel\Documents\GitHub\Prueba-MMKT\Backend\MMKTBackend.Application\obj\Debug\net5.0\MMKTBackend.Application.csproj.CoreCompileInputs.cache
+C:\Users\Daniel\Documents\GitHub\Prueba-MMKT\Backend\MMKTBackend.Application\obj\Debug\net5.0\MMKTBackend.Application.dll
+C:\Users\Daniel\Documents\GitHub\Prueba-MMKT\Backend\MMKTBackend.Application\obj\Debug\net5.0\refint\MMKTBackend.Application.dll
+C:\Users\Daniel\Documents\GitHub\Prueba-MMKT\Backend\MMKTBackend.Application\obj\Debug\net5.0\MMKTBackend.Application.pdb
+C:\Users\Daniel\Documents\GitHub\Prueba-MMKT\Backend\MMKTBackend.Application\obj\Debug\net5.0\MMKTBackend.Application.genruntimeconfig.cache
+C:\Users\Daniel\Documents\GitHub\Prueba-MMKT\Backend\MMKTBackend.Application\obj\Debug\net5.0\ref\MMKTBackend.Application.dll

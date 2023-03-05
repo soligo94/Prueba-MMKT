@@ -1,0 +1,15 @@
+C:\Users\Daniel\Documents\GitHub\Prueba-MMKT\Backend\MMKTBackend.Domain\bin\Debug\net5.0\MMKTBackend.Domain.deps.json
+C:\Users\Daniel\Documents\GitHub\Prueba-MMKT\Backend\MMKTBackend.Domain\bin\Debug\net5.0\MMKTBackend.Domain.runtimeconfig.json
+C:\Users\Daniel\Documents\GitHub\Prueba-MMKT\Backend\MMKTBackend.Domain\bin\Debug\net5.0\MMKTBackend.Domain.runtimeconfig.dev.json
+C:\Users\Daniel\Documents\GitHub\Prueba-MMKT\Backend\MMKTBackend.Domain\bin\Debug\net5.0\MMKTBackend.Domain.dll
+C:\Users\Daniel\Documents\GitHub\Prueba-MMKT\Backend\MMKTBackend.Domain\bin\Debug\net5.0\MMKTBackend.Domain.pdb
+C:\Users\Daniel\Documents\GitHub\Prueba-MMKT\Backend\MMKTBackend.Domain\obj\Debug\net5.0\MMKTBackend.Domain.csproj.AssemblyReference.cache
+C:\Users\Daniel\Documents\GitHub\Prueba-MMKT\Backend\MMKTBackend.Domain\obj\Debug\net5.0\MMKTBackend.Domain.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Daniel\Documents\GitHub\Prueba-MMKT\Backend\MMKTBackend.Domain\obj\Debug\net5.0\MMKTBackend.Domain.AssemblyInfoInputs.cache
+C:\Users\Daniel\Documents\GitHub\Prueba-MMKT\Backend\MMKTBackend.Domain\obj\Debug\net5.0\MMKTBackend.Domain.AssemblyInfo.cs
+C:\Users\Daniel\Documents\GitHub\Prueba-MMKT\Backend\MMKTBackend.Domain\obj\Debug\net5.0\MMKTBackend.Domain.csproj.CoreCompileInputs.cache
+C:\Users\Daniel\Documents\GitHub\Prueba-MMKT\Backend\MMKTBackend.Domain\obj\Debug\net5.0\MMKTBackend.Domain.dll
+C:\Users\Daniel\Documents\GitHub\Prueba-MMKT\Backend\MMKTBackend.Domain\obj\Debug\net5.0\refint\MMKTBackend.Domain.dll
+C:\Users\Daniel\Documents\GitHub\Prueba-MMKT\Backend\MMKTBackend.Domain\obj\Debug\net5.0\MMKTBackend.Domain.pdb
+C:\Users\Daniel\Documents\GitHub\Prueba-MMKT\Backend\MMKTBackend.Domain\obj\Debug\net5.0\MMKTBackend.Domain.genruntimeconfig.cache
+C:\Users\Daniel\Documents\GitHub\Prueba-MMKT\Backend\MMKTBackend.Domain\obj\Debug\net5.0\ref\MMKTBackend.Domain.dll

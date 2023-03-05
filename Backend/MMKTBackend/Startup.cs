@@ -26,10 +26,9 @@ namespace MMKTBackend
             {
                 c.SwaggerDoc("v1", new OpenApiInfo { Title = "MMKTBackend", Version = "v1" });
             });
-
+            
             services.AddDbContext<ApplicationDbContext>(options
-            => options.UseSqlServer(Configuration.GetConnectionString("defaultConnection"),
-            sqlServer => sqlServer.UseNetTopologySuite()));
+            => options.UseSqlServer(Configuration.GetConnectionString("defaultConnection"), b => b.MigrationsAssembly("MMKTBackend.API")));
         }
 
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.
