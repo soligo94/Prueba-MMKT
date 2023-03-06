@@ -23,6 +23,7 @@
 
   <ItemGroup>
     <ProjectReference Include="..\MMKTBackend.Domain\MMKTBackend.Domain.csproj" />
+    <ProjectReference Include="..\MMKTBackend.Infrastructure\MMKTBackend.Infrastructure.csproj" />
   </ItemGroup>
 
 </Project>

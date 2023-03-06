@@ -2016,6 +2016,20 @@
         "runtime": {
           "bin/placeholder/MMKTBackend.Domain.dll": {}
         }
+      },
+      "MMKTBackend.Infrastructure/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v5.0",
+        "dependencies": {
+          "MMKTBackend.Domain": "1.0.0",
+          "Microsoft.EntityFrameworkCore": "5.0.14"
+        },
+        "compile": {
+          "bin/placeholder/MMKTBackend.Infrastructure.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/MMKTBackend.Infrastructure.dll": {}
+        }
       }
     }
   },
@@ -6553,6 +6567,11 @@
       "type": "project",
       "path": "../MMKTBackend.Domain/MMKTBackend.Domain.csproj",
       "msbuildProject": "../MMKTBackend.Domain/MMKTBackend.Domain.csproj"
+    },
+    "MMKTBackend.Infrastructure/1.0.0": {
+      "type": "project",
+      "path": "../MMKTBackend.Infrastructure/MMKTBackend.Infrastructure.csproj",
+      "msbuildProject": "../MMKTBackend.Infrastructure/MMKTBackend.Infrastructure.csproj"
     }
   },
   "projectFileDependencyGroups": {
@@ -6560,6 +6579,7 @@
       "AutoMapper >= 12.0.1",
       "AutoMapper.Extensions.Microsoft.DependencyInjection >= 12.0.0",
       "MMKTBackend.Domain >= 1.0.0",
+      "MMKTBackend.Infrastructure >= 1.0.0",
       "Microsoft.EntityFrameworkCore >= 5.0.14",
       "Microsoft.EntityFrameworkCore.SqlServer >= 5.0.14",
       "Microsoft.EntityFrameworkCore.SqlServer.NetTopologySuite >= 5.0.14",
@@ -6606,6 +6626,9 @@
           "projectReferences": {
             "C:\\Users\\Daniel\\Documents\\GitHub\\Prueba-MMKT\\Backend\\MMKTBackend.Domain\\MMKTBackend.Domain.csproj": {
               "projectPath": "C:\\Users\\Daniel\\Documents\\GitHub\\Prueba-MMKT\\Backend\\MMKTBackend.Domain\\MMKTBackend.Domain.csproj"
+            },
+            "C:\\Users\\Daniel\\Documents\\GitHub\\Prueba-MMKT\\Backend\\MMKTBackend.Infrastructure\\MMKTBackend.Infrastructure.csproj": {
+              "projectPath": "C:\\Users\\Daniel\\Documents\\GitHub\\Prueba-MMKT\\Backend\\MMKTBackend.Infrastructure\\MMKTBackend.Infrastructure.csproj"
             }
           }
         }

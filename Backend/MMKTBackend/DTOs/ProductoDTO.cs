@@ -9,6 +9,6 @@ namespace MMKTBackend.API.DTOs
         public string Nombre { get; set; }
         public string Descripcion { get; set; }
         public double Precio { get; set; }
-        public FamiliaProductoEnum Familia { get; set; }
+        public FamilyProductEnum Familia { get; set; }
     }
 }

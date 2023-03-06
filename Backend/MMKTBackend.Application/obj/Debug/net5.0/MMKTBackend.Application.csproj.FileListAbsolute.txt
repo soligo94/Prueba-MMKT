@@ -13,3 +13,6 @@ C:\Users\Daniel\Documents\GitHub\Prueba-MMKT\Backend\MMKTBackend.Application\obj
 C:\Users\Daniel\Documents\GitHub\Prueba-MMKT\Backend\MMKTBackend.Application\obj\Debug\net5.0\MMKTBackend.Application.pdb
 C:\Users\Daniel\Documents\GitHub\Prueba-MMKT\Backend\MMKTBackend.Application\obj\Debug\net5.0\MMKTBackend.Application.genruntimeconfig.cache
 C:\Users\Daniel\Documents\GitHub\Prueba-MMKT\Backend\MMKTBackend.Application\obj\Debug\net5.0\ref\MMKTBackend.Application.dll
+C:\Users\Daniel\Documents\GitHub\Prueba-MMKT\Backend\MMKTBackend.Application\bin\Debug\net5.0\MMKTBackend.Domain.dll
+C:\Users\Daniel\Documents\GitHub\Prueba-MMKT\Backend\MMKTBackend.Application\bin\Debug\net5.0\MMKTBackend.Domain.pdb
+C:\Users\Daniel\Documents\GitHub\Prueba-MMKT\Backend\MMKTBackend.Application\obj\Debug\net5.0\MMKTBackend.Application.csproj.CopyComplete
