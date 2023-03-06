@@ -66,3 +66,9 @@ C:\Users\Daniel\Documents\GitHub\Prueba-MMKT\Backend\MMKTBackend\obj\Debug\net5.
 C:\Users\Daniel\Documents\GitHub\Prueba-MMKT\Backend\MMKTBackend\obj\Debug\net5.0\ref\MMKTBackend.API.dll
 C:\Users\Daniel\Documents\GitHub\Prueba-MMKT\Backend\MMKTBackend\bin\Debug\net5.0\Microsoft.AspNetCore.Diagnostics.EntityFrameworkCore.dll
 C:\Users\Daniel\Documents\GitHub\Prueba-MMKT\Backend\MMKTBackend\obj\Debug\net5.0\MMKTBackend.API.MvcApplicationPartsAssemblyInfo.cs
+C:\Users\Daniel\Documents\GitHub\Prueba-MMKT\Backend\MMKTBackend\bin\Debug\net5.0\AutoMapper.Extensions.Microsoft.DependencyInjection.dll
+C:\Users\Daniel\Documents\GitHub\Prueba-MMKT\Backend\MMKTBackend\bin\Debug\net5.0\Microsoft.Extensions.DependencyInjection.Abstractions.dll
+C:\Users\Daniel\Documents\GitHub\Prueba-MMKT\Backend\MMKTBackend\bin\Debug\net5.0\Microsoft.Extensions.Options.dll
+C:\Users\Daniel\Documents\GitHub\Prueba-MMKT\Backend\MMKTBackend\bin\Debug\net5.0\Microsoft.Extensions.Primitives.dll
+C:\Users\Daniel\Documents\GitHub\Prueba-MMKT\Backend\MMKTBackend\bin\Debug\net5.0\System.Runtime.CompilerServices.Unsafe.dll
+C:\Users\Daniel\Documents\GitHub\Prueba-MMKT\Backend\MMKTBackend\bin\Debug\net5.0\NSwag.Annotations.dll

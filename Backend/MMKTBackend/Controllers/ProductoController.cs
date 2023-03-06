@@ -1,16 +1,20 @@
 ﻿using AutoMapper;
 using Microsoft.AspNetCore.Mvc;
-using Microsoft.Extensions.Logging;
+using Microsoft.EntityFrameworkCore;
 using MMKTBackend.API;
 using MMKTBackend.API.DTOs;
 using MMKTBackend.API.Utils;
-using System;
+using MMKTBackend.Domain;
+using NSwag.Annotations;
 using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
 
 namespace MMKTBackend.Controllers
 {
+    [OpenApiTag("API Productos MMKT",
+                Description = "Web API para insertar productos (post (//API//productos)) " +
+                "y ver la cantidad de productos añadidos a la base de datos (get (//API//nuevoProducto)).")]
     [ApiController]
     [Route("[controller]")]
     public class ProductoController : ControllerBase
@@ -24,27 +28,28 @@ namespace MMKTBackend.Controllers
             this.mapper = mapper;
         }
 
-      /*  [HttpGet]
-        public async Task<ActionResult<List<ProductoDTO>>> Get([FromQuery] PaginacionDTO paginacionDTO)
+        [OpenApiTag("API Productos MMKT",
+            Description = "Web API ver la cantidad de productos añadidos a la base de datos (get (//API//nuevoProducto)).")]
+        [HttpGet("/api/productos")]
+        public async Task<ActionResult<List<ProductoDTO>>> Get()
         {
-            var queryable = context.Producto.AsQueryable();
+            var queryable = context.Productos.AsQueryable();
             await HttpContext.InsertarParametrosPaginacionEnCabecera(queryable);
-            var cines = await queryable.OrderBy(X => X.Nombre).Paginar(paginacionDTO).ToListAsync();
+            var productos = await queryable.OrderBy(X => X.Nombre).ToListAsync();
 
-            return mapper.Map<List<ProductoDTO>>(cines);
+            return mapper.Map<List<ProductoDTO>>(productos);
         }
 
-       [HttpGet]
-        public IEnumerable<ProductoDTO> Post()
+        [OpenApiTag("API Nuevo Producto",
+            Description = "Web API para insertar productos (post (//API//productos)) ")]
+        [HttpPost("/api/nuevoProducto")]
+        public async Task<ActionResult> Post([FromBody] ProductoDTO productoDTO)
         {
-            var rng = new Random();
-           /* return Enumerable.Range(1, 5).Select(index => new WeatherForecast
-            {
-                Date = DateTime.Now.AddDays(index),
-                TemperatureC = rng.Next(-20, 55),
-                Summary = Summaries[rng.Next(Summaries.Length)]
-            })
-            .ToArray();
-        }*/
+            var nuevoProducto = mapper.Map<Producto>(productoDTO);
+            context.Add(nuevoProducto);
+            await context.SaveChangesAsync();
+
+            return NoContent();
+        }
     }
 }
