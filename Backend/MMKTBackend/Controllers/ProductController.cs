@@ -20,12 +20,12 @@ namespace MMKTBackend.Controllers
                 "y ver la cantidad de productos añadidos a la base de datos (get (//API//nuevoProducto)).")]
     [ApiController]
     [Route("[controller]")]
-    public class ProductoController : ControllerBase
+    public class ProductController : ControllerBase
     {
         private readonly IMapper mapper;
         private readonly IProductService _productService;
 
-        public ProductoController(IMapper mapper, IProductService productService)
+        public ProductController(IMapper mapper, IProductService productService)
         {
             this.mapper = mapper;
             this._productService = productService;
