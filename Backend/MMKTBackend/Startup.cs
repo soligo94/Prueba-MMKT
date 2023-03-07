@@ -7,6 +7,11 @@ using MMKTBackend.API;
 using Microsoft.EntityFrameworkCore;
 using AutoMapper;
 using Microsoft.OpenApi.Models;
+using MMKTBackend.Infrastructure.ProductContext;
+using MMKTBackend.Application.IProductServices;
+using MMKTBackend.Application.Services;
+using MMKTBackend.Infrastructure.Repositories;
+using MMKTBackend.Domain.Interfaces;
 
 namespace MMKTBackend
 {
@@ -29,9 +34,10 @@ namespace MMKTBackend
                 c.SwaggerDoc("v1", new OpenApiInfo { Title = "Productos MMKT API", Description="API para insertar productos (post (//API//productos)) y ver la cantidad de productos añadidos a la base de datos (get (//API//nuevoProducto))", Version = "v1" });
             });
             
-            services.AddDbContext<ApplicationDbContext>(options
+            services.AddDbContext<ProductDbContext>(options
             => options.UseSqlServer(Configuration.GetConnectionString("defaultConnection"), b => b.MigrationsAssembly("MMKTBackend.API")));
-
+            services.AddTransient<IProductService, ProductService>();
+            services.AddTransient<IProductRepository, ProductRepository>();
         }
 
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.

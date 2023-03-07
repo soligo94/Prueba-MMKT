@@ -9,6 +9,7 @@ namespace MMKTBackend.Domain.Interfaces
 {
     public interface IProductRepository
     {
-        Task<IReadOnlyList<Domain.Entities.Product>> GetListOfproducts();
+        Task<IQueryable<Domain.Entities.Product>> GetListOfproducts();
+        void AddProduct(Domain.Entities.Product product);
     }
 }

@@ -1,6 +1,7 @@
 ﻿using AutoMapper;
 using MMKTBackend.API.DTOs;
 using MMKTBackend.Domain;
+using MMKTBackend.Domain.Entities;
 
 namespace MMKTBackend.API.Utils
 {
@@ -8,8 +9,8 @@ namespace MMKTBackend.API.Utils
     {
         public AutoMapperProfiles()
         {
-            CreateMap<Producto, ProductoDTO>().ReverseMap();
-            CreateMap<ProductoDTO, Producto>();
+            CreateMap<Product, ProductDTO>().ReverseMap();
+            CreateMap<ProductDTO, Product>();
         }
     }
 }

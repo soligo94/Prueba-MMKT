@@ -7,9 +7,9 @@ using System.Threading.Tasks;
 
 namespace MMKTBackend.Application.IProductServices
 {
-    public interface IProductService<T>
+    public interface IProductService
     {
-        Task<IReadOnlyList<T>> GetAll();
-        void Insert(T entity);
+        Task<IQueryable<Product>> GetAll();
+        void Insert(Product productEntity);
     }
 }

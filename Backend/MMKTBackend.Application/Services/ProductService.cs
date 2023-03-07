@@ -9,21 +9,21 @@ using System.Threading.Tasks;
 
 namespace MMKTBackend.Application.Services
 {
-    public class ProductService : IProductService<Product>
+    public class ProductService : IProductService
     {
         private readonly IProductRepository _productRepository;
         public ProductService(IProductRepository productRepository)
         {
             _productRepository = productRepository;
         }
-        public async Task<IReadOnlyList<Product>> GetAll()
+        public async Task<IQueryable<Product>> GetAll()
         {
             return await _productRepository.GetListOfproducts();
         }
 
-        public void Insert(Product entity)
+        public void Insert(Product productEntity)
         {
-            throw new NotImplementedException();
+            _productRepository.AddProduct(productEntity);
         }
     }
 }

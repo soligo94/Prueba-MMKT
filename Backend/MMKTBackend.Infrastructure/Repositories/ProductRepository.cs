@@ -1,4 +1,5 @@
 ﻿using MMKTBackend.Domain;
+using MMKTBackend.Domain.Entities;
 using MMKTBackend.Domain.Interfaces;
 using MMKTBackend.Infrastructure.ProductContext;
 using System;
@@ -16,9 +17,15 @@ namespace MMKTBackend.Infrastructure.Repositories
             _ProductContext = productContext;
         }
 
-        public async Task<IReadOnlyList<Domain.Entities.Product>> GetListOfproducts()
+        public void AddProduct(Product product)
         {
-            return _ProductContext.Products.ToList();
+            _ProductContext.Products.Add(product);
+            _ProductContext.SaveChanges();
+        }
+
+        public async Task<IQueryable<Domain.Entities.Product>> GetListOfproducts()
+        {
+            return _ProductContext.Products.AsQueryable();
         }
     }
 }

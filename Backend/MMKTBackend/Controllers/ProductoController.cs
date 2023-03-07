@@ -4,7 +4,10 @@ using Microsoft.EntityFrameworkCore;
 using MMKTBackend.API;
 using MMKTBackend.API.DTOs;
 using MMKTBackend.API.Utils;
+using MMKTBackend.Application.IProductServices;
+using MMKTBackend.Application.Services;
 using MMKTBackend.Domain;
+using MMKTBackend.Domain.Entities;
 using NSwag.Annotations;
 using System.Collections.Generic;
 using System.Linq;
@@ -19,35 +22,35 @@ namespace MMKTBackend.Controllers
     [Route("[controller]")]
     public class ProductoController : ControllerBase
     {
-        private readonly ApplicationDbContext context;
         private readonly IMapper mapper;
+        private readonly IProductService _productService;
 
-        public ProductoController(ApplicationDbContext context, IMapper mapper)
+        public ProductoController(IMapper mapper, IProductService productService)
         {
-            this.context = context;
             this.mapper = mapper;
+            this._productService = productService;
         }
 
         [OpenApiTag("API Productos MMKT",
             Description = "Web API ver la cantidad de productos añadidos a la base de datos (get (//API//nuevoProducto)).")]
         [HttpGet("/api/productos")]
-        public async Task<ActionResult<List<ProductoDTO>>> Get()
+        public async Task<ActionResult<List<ProductDTO>>> Get()
         {
-            var queryable = context.Productos.AsQueryable();
+            var queryable = _productService.GetAll().GetAwaiter().GetResult();
             await HttpContext.InsertarParametrosPaginacionEnCabecera(queryable);
-            var productos = await queryable.OrderBy(X => X.Nombre).ToListAsync();
+            var products = await queryable.OrderBy(X => X.Name).ToListAsync();
 
-            return mapper.Map<List<ProductoDTO>>(productos);
+            return mapper.Map<List<ProductDTO>>(products);
         }
 
         [OpenApiTag("API Nuevo Producto",
             Description = "Web API para insertar productos (post (//API//productos)) ")]
         [HttpPost("/api/nuevoProducto")]
-        public async Task<ActionResult> Post([FromBody] ProductoDTO productoDTO)
+        public async Task<ActionResult> Post([FromBody] ProductDTO productoDTO)
         {
-            var nuevoProducto = mapper.Map<Producto>(productoDTO);
-            context.Add(nuevoProducto);
-            await context.SaveChangesAsync();
+            var nuevoProducto = mapper.Map<Product>(productoDTO);
+            _productService.Insert(nuevoProducto);
+            
 
             return NoContent();
         }

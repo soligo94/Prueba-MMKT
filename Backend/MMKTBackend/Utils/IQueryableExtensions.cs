@@ -5,10 +5,10 @@ namespace MMKTBackend.API.Utils
 {
     public static class IQueryableExtensions
     {
-        public static IQueryable<T> Paginar<T>(this IQueryable<T> queryable, PaginacionDTO paginacionDTO)
+        public static IQueryable<T> Paginar<T>(this IQueryable<T> queryable, PaginationDTO paginacionDTO)
         {
-            return queryable.Skip((paginacionDTO.Pagina - 1) * paginacionDTO.RecordsPorPagina)
-                .Take(paginacionDTO.RecordsPorPagina);
+            return queryable.Skip((paginacionDTO.Page - 1) * paginacionDTO.RecordsPerPage)
+                .Take(paginacionDTO.RecordsPerPage);
         }
     }
 }

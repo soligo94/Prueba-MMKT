@@ -3,6 +3,7 @@ using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Hosting;
 using Microsoft.Extensions.Logging;
 using MMKTBackend.API;
+using MMKTBackend.Infrastructure.ProductContext;
 using System;
 
 namespace MMKTBackend
@@ -25,7 +26,7 @@ namespace MMKTBackend
                 var services = scope.ServiceProvider;
                 try
                 {
-                    var context = services.GetRequiredService<ApplicationDbContext>();
+                    var context = services.GetRequiredService<ProductDbContext>();
                 }
                 catch (Exception ex)
                 {

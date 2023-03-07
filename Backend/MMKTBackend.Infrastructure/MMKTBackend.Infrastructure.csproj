@@ -16,8 +16,4 @@
     <ProjectReference Include="..\MMKTBackend.Domain\MMKTBackend.Domain.csproj" />
   </ItemGroup>
 
-  <ItemGroup>
-    <Folder Include="Data\" />
-  </ItemGroup>
-
 </Project>
