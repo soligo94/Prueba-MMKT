@@ -1,8 +1,12 @@
 import { BrowserRouter } from 'react-router-dom';
-import { Route, Routes } from 'react-router';
+import { Route, Routes} from 'react-router';
 import './App.css';
-import routes from './route-config';
 import Menu from './utils/Menu';
+import NewProduct from './product/NewProduct';
+import ProductList from './product/forms/AllProductsForm';
+import 'primereact/resources/themes/lara-light-indigo/theme.css';   // theme
+import 'primereact/resources/primereact.css';                       // core css
+import 'primeicons/primeicons.css';                                 // icons
 
 function App() {
   return (
@@ -11,10 +15,8 @@ function App() {
       <Menu/>
        <div className="container">
          <Routes> 
-           {routes.map( path => 
-             <Route key={path.path} path={path.path}>
-               <path.component/>
-             </Route>)}
+            <Route path='/product/allProducts' element={<ProductList />} />
+            <Route path='/product/newProduct' element={<NewProduct />} />
          </Routes>
        </div>
      </BrowserRouter>

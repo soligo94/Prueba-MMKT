@@ -1,0 +1,36 @@
+.container{
+    display: flex;
+    justify-content: center;
+}
+.card{
+    justify-content: center;
+}
+.form-prod{
+    width: 25%;
+}
+.form-prod .card {
+    min-width: 450px;
+}
+.form-prod .card form {
+    margin-top: 2rem;
+}
+.form-prod .card .field{
+    margin-bottom: 1.5rem;
+}
+@media screen and (max-width: 960px) {
+    .form-prod .card {
+        width: 80%;
+    }
+}
+@media screen and (max-width: 640px) {
+    .form-prod .card {
+        width: 100%;
+        min-width: 0;
+    }
+}
+.form-prod .card .cancelBtn{
+    margin-top: 5%;
+    background-color: red;
+    border: red;
+}
+            

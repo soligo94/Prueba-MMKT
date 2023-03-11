@@ -4,12 +4,12 @@ export interface product
     name: string;
     description: string;
     price: number;
-    family: number;
+    family: string;
 }
 
 export interface productDTO{
     name: string;
     description: string;
     price: number;
-    family: number;
+    family: string;
 }

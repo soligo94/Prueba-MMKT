@@ -8,7 +8,7 @@ namespace MMKTBackend.API.Utils
 {
     public static class HttpContextExtensions
     {
-        public async static Task InsertarParametrosPaginacionEnCabecera<T>(this HttpContext httpContext, IQueryable<T> queryable)
+        public async static Task InsertPaginationParamitersInHeader<T>(this HttpContext httpContext, IQueryable<T> queryable)
         {
             if (httpContext == null)
             {
@@ -16,7 +16,7 @@ namespace MMKTBackend.API.Utils
             }
 
             double cantidad = await queryable.CountAsync();
-            httpContext.Response.Headers.Add("cantidadTotalProductos", cantidad.ToString());
+            httpContext.Response.Headers.Add("maxrecordsperpage", cantidad.ToString());
         }
     }
 }

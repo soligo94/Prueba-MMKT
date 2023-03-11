@@ -33,7 +33,15 @@ namespace MMKTBackend
             {
                 c.SwaggerDoc("v1", new OpenApiInfo { Title = "Productos MMKT API", Description="API para insertar productos (post (//API//productos)) y ver la cantidad de productos añadidos a la base de datos (get (//API//nuevoProducto))", Version = "v1" });
             });
-            
+
+            services.AddCors(options =>
+            {
+                var frontendURL = Configuration.GetValue<string>("frontend_url");
+                options.AddDefaultPolicy(builder =>
+                {
+                    builder.WithOrigins(frontendURL).AllowAnyMethod().AllowAnyHeader().WithExposedHeaders(new string[] { "totalRecords" });
+                });
+            });
             services.AddDbContext<ProductDbContext>(options
             => options.UseSqlServer(Configuration.GetConnectionString("defaultConnection"), b => b.MigrationsAssembly("MMKTBackend.API")));
             services.AddTransient<IProductService, ProductService>();
@@ -53,6 +61,8 @@ namespace MMKTBackend
             app.UseHttpsRedirection();
 
             app.UseRouting();
+
+            app.UseCors(Configuration.GetValue<string>("frontend_url"));
 
             app.UseAuthorization();
 

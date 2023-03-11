@@ -1,0 +1,64 @@
+{
+    "families": [
+      {
+        "id": "0",
+        "familyName": "Gaming"
+      },
+      {
+        "id": "1",
+        "familyName": "Accesorios Informática"
+      },
+      {
+        "id": "2",
+        "familyName": "Telefonía"
+      },
+      {
+        "id": "3",
+        "familyName": "SmartWatch"
+      },
+      {
+        "id": "4",
+        "familyName": "TV"
+      },
+      {
+        "id": "5",
+        "familyName": "Audio HiFi"
+      },
+      {
+        "id": "6",
+        "familyName": "Consolas y juegos"
+      },
+      {
+        "id": "7",
+        "familyName": "Electrodomésticos"
+      },
+      {
+        "id": "8",
+        "familyName": "Pequeños electrodomésticos"
+      },     
+      {
+        "id": "9",
+        "familyName": "Belleza y salud"
+      },      
+      {
+        "id": "10",
+        "familyName": "Climatización y calefacción"
+      },   
+        {
+        "id": "11",
+        "familyName": "Smart home"
+      }, 
+      {
+        "id": "12",
+        "familyName": "Deporte nutrición"
+      },     
+      {
+        "id": "13",
+        "familyName": "Movilidad Urbana"
+      },   
+      {
+        "id": "14",
+        "familyName": "Otras categorias"
+      }
+    ] 
+  }
