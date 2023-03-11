@@ -4,7 +4,7 @@ import { useState } from "react";
 import { urlProducts } from "../utils/endpoint";
 import AddProductForm from "./forms/AddProductForm";
 import { productDTO } from "./model/product.model";
-import ErrorDisplay from "../utils/ErrorDisplay";
+
 
 export default function NewProduct()
 {
@@ -31,7 +31,6 @@ export default function NewProduct()
     }
     return(
         <>
-            <ErrorDisplay errors={errors} />
             <AddProductForm product={{ name:'', description: '', price: 0, family: ''}} onSubmit={async values=> await createProudct(values) } />
         </>
     )
